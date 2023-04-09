@@ -1,0 +1,220 @@
+/* Variables */
+:root {
+	--p-color: #ddd;
+}
+
+/* Start Global Rules */
+
+* {
+	-webkit-box-sizing: border-box;
+	-moz-box-sizing: border-box;
+	box-sizing: border-box;
+	padding: 0;
+	margin: 0;
+	text-transform: capitalize;
+}
+
+body {
+	font-family: "Open Sans", sans-serif;
+}
+
+.container {
+	padding-left: 15px;
+	padding-right: 15px;
+	margin-left: auto;
+	margin-right: auto;
+}
+
+@media (max-width: 767px) {
+	.container {
+		padding-left: 0;
+		padding-right: 0;
+	}
+}
+i {
+	font-weight: 900 !important;
+}
+
+/* End Global Rules */
+
+/* Start */
+
+.box {
+	border-radius: 60px;
+	box-shadow: 0 0 50px #eee;
+	width: 70%;
+	margin: auto;
+	grid-template-columns: repeat(auto-fill, minmax(440px, 1fr));
+	width: auto;
+}
+
+@media (max-width: 767px) {
+	.box {
+		border-radius: 0;
+	}
+}
+
+@media (max-width: 1200px) {
+	.box {
+		border-radius: 0;
+	}
+}
+
+.progress {
+	background-color: #3630ec;
+	padding: 40px;
+	border-radius: 60px;
+	width: 50%;
+}
+
+@media (max-width: 767px) {
+	.progress {
+		border-radius: 0 0 60px 60px;
+	}
+}
+
+@media (max-width: 1200px) {
+	.progress {
+		padding: 20px;
+	}
+}
+
+.progress > h3 {
+	margin-bottom: 30px;
+	color: var(--p-color);
+}
+
+.progress .counter {
+	padding: 50px;
+	width: 220px;
+	margin-right: auto;
+	box-shadow: 0 0 50px #2019196b inset;
+}
+
+@media (max-width: 1200px) {
+	.progress .counter {
+		margin-bottom: 20px;
+	}
+}
+
+.progress .counter .number {
+	font-size: 70px;
+	padding-bottom: 10px;
+}
+
+.progress .counter .of {
+	color: var(--p-color);
+}
+
+.progress .affirmation p {
+	width: 80%;
+	margin-right: auto;
+	color: var(--p-color);
+}
+
+@media (max-width: 1200px) {
+	.progress .affirmation h2 {
+		margin-bottom: 20px;
+	}
+}
+
+.summary {
+	padding: 60px 50px;
+	width: 50%;
+}
+
+@media (max-width: 1200px) {
+	.summary {
+		display: flex;
+		justify-content: center;
+		align-items: center;
+		flex-wrap: wrap;
+		padding: 40px 30px;
+	}
+}
+
+.summary > h3 {
+	color: #2a3046;
+	margin-bottom: 40px;
+}
+
+@media (max-width: 1200px) {
+	.summary h3 {
+		margin-bottom: 25px;
+	}
+}
+
+.summary .title h4,
+.summary .num {
+	font-size: 18px;
+}
+
+.summary .num span {
+	color: #837979;
+}
+
+.summary .status .reaction,
+.summary .status .memory,
+.summary .status .verbal,
+.summary .status .visual {
+	padding: 20px 20px;
+	border: 1px solid;
+	width: 95%;
+}
+
+.summary .status .reaction {
+	background-color: #fff6f5;
+	border-color: #f443366b;
+}
+
+.summary .status .reaction:hover {
+	background-color: #fae5e2;
+}
+
+.summary .status .memory {
+	background-color: #fffbf2;
+	border-color: #f59e0b85;
+}
+
+.summary .status .memory:hover {
+	background-color: #f8ecce;
+}
+
+.summary .status .verbal {
+	background-color: #f2fbfa;
+	border-color: #2abfaf5e;
+}
+
+.summary .status .verbal:hover {
+	background-color: #dbfaf6;
+}
+
+.summary .status .visual {
+	background-color: #f3f3fd;
+	border-color: #6d6d9b6e;
+	margin-bottom: 60px;
+}
+
+@media (max-width: 1200px) {
+	.summary .status .visual {
+		margin-bottom: 30px;
+	}
+}
+
+.summary .status .visual:hover {
+	background-color: #dcdcfa;
+}
+
+.summary .continue-btn {
+	padding: 15px 38%;
+	border-radius: 30px;
+	background-color: #303b59;
+	margin-right: auto;
+	text-transform: capitalize;
+}
+
+.summary .continue-btn:hover {
+	background-color: #21293d;
+}
+
+/* End */
